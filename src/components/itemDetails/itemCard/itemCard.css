@@ -1,0 +1,87 @@
+.item-card {
+  width: auto;
+  height: 100px;
+  border: 2px solid rgba(249, 202, 65, 0.25);
+  border-radius: 8px;
+  margin: 0 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-half {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.food-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../assets/biryani.png");
+  margin: 10px;
+  background-position: center;
+  background-size: 76px 76px;
+  height: 76px;
+  width: 76px;
+}
+
+.item-card:hover {
+  border: 2px solid #d90429;
+}
+
+.name-and-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 76px;
+}
+
+.name-and-price p:nth-child(1) {
+  font-size: 14.8px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.name-and-price p:nth-child(2) {
+  font-size: 14.8px;
+  font-weight: 700;
+  color: var(--color-grey-text);
+}
+
+.second-half {
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+
+.item-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 17.5px;
+  background: var(--color-blue-bg);
+  color: var(--color-blue-text);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.item-qty span:nth-child(1) {
+  font-size: 14.8px;
+  color: var(--color-red-primary);
+  font-weight: 400;
+}
+.item-qty span:nth-child(2) {
+  font-size: 14.8px;
+  color: var(--color-red-primary);
+  font-weight: 700;
+}

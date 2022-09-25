@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans";
+  box-sizing: border-box;
+  font-size: 15px;
+  letter-spacing: -0.3px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0dada;
+}
+
+.App {
+  margin: 10px 0;
+  height: 720px;
+  width: 382px;
+  background-color: #ffffff;
+  overflow-y: hidden;
+}
+
+.divider {
+  border-top: 1px solid rgba(15, 25, 26, 0.1);
+  border-bottom: transparent;
+  margin: 8px 0;
+}
+
+.items-container {
+  overflow-y: auto;
+  width: auto;
+  height: 303px;
+}
+
+.go-home-btn {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 16px;
+  background-color: var(--color-red-primary);
+  color: #fff;
+  font-size: 24px;
+  border-radius: 12px;
+  padding: 17px 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+  .App {
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    overflow: auto;
+  }
+  .status-bar {
+    display: none;
+  }
+}
+
+:root {
+  --color-red-primary: #e63946;
+  --color-red-bg: #fbe6ea;
+  --color-green-text: #2fbf71;
+  --color-green-bg: #eaf9f1;
+  --color-blue-text: #4361ee;
+  --color-blue-bg: #eceffd;
+  --color-yellow-text: #f9ca41;
+  --color-yellow-bg: #fefaec;
+  --color-black-text: #0f191a;
+  --color-grey-text: #8c8787;
+  --color-food-info-bg: #59595b;
+  --color-food-bg: #d9d9d9;
+  --section-margin: 12px 16px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(86, 86, 86, 0.589);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-red-primary);
+}

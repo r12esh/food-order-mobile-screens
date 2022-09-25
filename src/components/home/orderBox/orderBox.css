@@ -1,0 +1,91 @@
+.order-box {
+  display: flex;
+  flex-direction: row;
+  margin: 12px 16px;
+  border: 1.7px solid var(--color-red-primary);
+  border-radius: 8px;
+  height: 72px;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.cooking-pot-icon-box {
+  border-radius: 6.58036px;
+  background: var(--color-red-bg);
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.cooking-pot-icon {
+  font-size: 29px;
+  color: var(--color-red-primary);
+}
+
+.order-card-first-half {
+  display: flex;
+  flex-direction: row;
+}
+
+.order-card-first-half h4 {
+  font-size: 19.4px;
+  font-weight: 500;
+}
+
+.order-card-price-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.order-card-price-box p {
+  color: var(--color-blue-text);
+  letter-spacing: -0.03px;
+  font-weight: 400;
+  font-size: 14.8px ;
+}
+
+.order-card-price-box span {
+  color: var(--color-blue-text);
+  letter-spacing: -0.03px;
+  font-weight: 600;
+}
+
+/*-----------------------------------------------------*/
+
+.order-card-second-half {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+
+.order-id span {
+  font-weight: 700;
+  font-size: 14.8px;
+}
+.order-id span:nth-child(2) {
+  color: var(--color-red-primary);
+}
+
+.order-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10000px;
+  background: var(--color-blue-bg);
+  font-size: 11px;
+  letter-spacing: -0.3px;
+  padding: 5px 10px 5px 10px;
+  color: var(--color-blue-text);
+  font-weight: 500;
+}
